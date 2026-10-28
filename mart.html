@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaTech Solutions</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #10233f;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    header h2 {
+      font-size: 23px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #10233f, #285ca8);
+      color: white;
+      padding: 100px 8%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #4f8cff;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 7px;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .btn:hover {
+      background: #326fe0;
+    }
+
+    section {
+      padding: 60px 8%;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px #0000000d;
+      transition: transform 0.2s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card .icon {
+      font-size: 35px;
+    }
+
+    .service-card h3 {
+      color: #285ca8;
+      margin: 12px 0;
+    }
+
+    .about {
+      background: #eaf1fc;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    .contact {
+      background: white;
+    }
+
+    form {
+      max-width: 550px;
+      margin: auto;
+      display: grid;
+      gap: 16px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 7px;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px solid #4f8cff;
+      border-color: transparent;
+    }
+
+    #status {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    footer {
+      background: #10233f;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 14px;
+      }
+
+      .hero {
+        padding: 70px 6%;
+      }
+
+      section {
+        padding: 45px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h2>NovaTech Solutions</h2>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <main>
+    <section class="hero" id="home">
+      <h1>We Build Digital Solutions<br>For Your Business</h1>
+
+      <p>
+        Technology. Innovation. Growth.
+        <br>
+        Helping businesses succeed with modern technology.
+      </p>
+
+      <a href="#services" class="btn">Explore Services</a>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <h2>Our Services</h2>
+
+      <div class="services">
+        <article class="service-card">
+          <div class="icon">💻</div>
+          <h3>Web Development</h3>
+          <p>
+            We create modern, responsive websites
+            and web applications for your business.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="icon">⚙️</div>
+          <h3>IT Solutions</h3>
+          <p>
+            Reliable technology solutions to improve
+            productivity and business performance.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="icon">📈</div>
+          <h3>Business Consulting</h3>
+          <p>
+            Smart strategies and practical guidance
+            to help your company grow.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <h2>About Our Company</h2>
+
+      <p>
+        NovaTech Solutions is a sample technology company
+        focused on delivering innovative digital services.
+        We help businesses simplify their processes,
+        improve efficiency, and achieve their goals
+        through technology and creative solutions.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+
+      <form id="contactForm">
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          maxlength="100"
+          required
+        >
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          maxlength="254"
+          required
+        >
+
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          maxlength="2000"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn">
+          Send Message
+        </button>
+      </form>
+
+      <p id="status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      &copy; <span id="year"></span> NovaTech Solutions.
+      All rights reserved.
+    </p>
+    <p>Email: info@novatech.example</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    document.getElementById("contactForm")
+      .addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const form = event.currentTarget;
+        const name = form.elements.name.value.trim();
+
+        document.getElementById("status").textContent =
+          "Thank you, " + name +
+          "! This demo form is working, but a backend is needed to deliver your message.";
+
+        form.reset();
+      });
+  </script>
+
+</body>
+</html>
